@@ -1,2 +1,2 @@
-# hello
-learning go
+# weather
+weather via golang
