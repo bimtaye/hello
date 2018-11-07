@@ -53,7 +53,7 @@ type WeatherData struct {
   } `json:"coord"`
 
   Weather []struct {
-    Id          int64    `json:"id"`
+    Id          int64  `json:"id"`
     Main        string `json:"main"`
     Description string `json:"description"`
     Icon        string `json:"icon"`
@@ -70,7 +70,7 @@ type WeatherData struct {
   } `json:"main"`
 
   Wind struct {
-    Speed float64 `json:"speed"`
+    Speed     float64 `json:"speed"`
     Direction float64 `json:"deg"`
   } `json:"wind"`
 
@@ -85,14 +85,14 @@ type WeatherData struct {
   Date int64 `json:"dt"`
 
   Sys struct {
-    Type int64 `json:"type"`
-    Id int64 `json:"id"`
+    Type    int64   `json:"type"`
+    Id      int64   `json:"id"`
     Message float64 `json:"message"`
-    Country string `json:"country"`
-    Sunrise int64 `json:"sunrise"`
-    Sunset int64 `json:"sunset"`
+    Country string  `json:"country"`
+    Sunrise int64   `json:"sunrise"`
+    Sunset  int64   `json:"sunset"`
   } `json:"sys"`
 
-  Id int64 `json:"id"`
+  Id  int64 `json:"id"`
   Cod int64 `json:"cod"`
 }
